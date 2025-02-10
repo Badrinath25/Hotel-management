@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication6.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>ASP.NET</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header id="header">
+        <h1>HotelRegistration MasterPage</h1>
+    </header>
+    <nav id="nav">
+        <div style="color:#F1FAEE;font-size:30px;background-color:#FFFFFF;padding:5px;display:inline;padding-left:2px;column-width:20px;">
+            <a href="WebForm1.aspx">User Registration</a><br />
+
+            <a href="WebForm4.aspx">User Details</a><br />
+            
+            <a href="WebForm5.aspx">Hotel Registration</a><br />
+            
+            <a href="WebForm6.aspx">Hotel Details</a>
+            
+        </div>
+    </nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer id="footer">
+        A HotelRegistration Project
+    </footer>
+</body>
+</html>
